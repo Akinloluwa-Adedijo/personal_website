@@ -27,9 +27,10 @@ const NavigationLinks = (props) => {
       py={1}
       rounded={"md"}
       href={"#"}
+      color={useColorModeValue("text.light", "text.dark")}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("accent.light", "accent.dark"),
+        bg: useColorModeValue("primary", "#1E3849"),
       }}
     >
       {children}
