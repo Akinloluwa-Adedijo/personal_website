@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Center,
+  Highlight,
   Stack,
   Heading,
   Text,
@@ -13,10 +14,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
-    <Box
-      h={"100vh"}
-      bg={useColorModeValue("background.light", "background.dark")}
-    >
+    <Box bg={useColorModeValue("background.light", "background.dark")}>
       <Stack
         as={"Box"}
         textAlign={"center"}
@@ -25,35 +23,32 @@ const Home = () => {
       >
         <Heading
           fontWeight={600}
+          lineHeight={"tall"}
           fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
           color={useColorModeValue("text.light", "text.dark")}
         >
-          Hey,
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-            color={useColorModeValue("accent.light", "accent.dark")}
+          <Highlight
+            query={"Akinloluwa Adedijo"}
+            styles={{ px: "2", py: "1", rounded: "full", bg: "primary" }}
           >
-            I'm Akinloluwa Adedijo
-          </Heading>
-          <br />
+            Hey, I'm Akinloluwa Adedijo
+          </Highlight>
           <Text
-            fontWeight={600}
-            fontSize={40}
-            as={"span"}
-            color={useColorModeValue("text.light", "text,dark")}
+            fontWeight={300}
+            fontSize={{ base: "xl", sm: "2xl", md: "4xl" }}
           >
-            Welcome to my website
+            Welcome to my personal website
           </Text>
+          <Button
+            bg={"primary"}
+            rounded={"full"}
+            rightIcon={<ArrowForwardIcon />}
+            size={"lg"}
+          >
+            About Me
+          </Button>
         </Heading>
       </Stack>
-      <Button
-        bg={useColorModeValue("primary", "primary")}
-        _hover={"none"}
-        color={useColorModeValue("text.light", "text.light")}
-      >
-        About Me
-      </Button>
     </Box>
   );
 };
