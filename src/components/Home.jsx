@@ -2,12 +2,10 @@ import React from "react";
 import {
   Box,
   Button,
-  Center,
   Highlight,
   Stack,
   Heading,
   Text,
-  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
