@@ -12,10 +12,10 @@ const About = () => {
   return (
     <Center>
       <Box
-        w={{ sm: "md", md: "lg", xl: "4xl" }}
-        h={"2xl"}
+        maxW={"md"}
         bg={useColorModeValue("background.light", "background.dark")}
         mt={20}
+        p={10}
       >
         <Heading
           fontWeight={600}

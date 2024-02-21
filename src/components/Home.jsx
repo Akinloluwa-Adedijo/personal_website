@@ -13,11 +13,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
-    <Box
-      bg={useColorModeValue("background.light", "background.dark")}
-      mt={20}
-      h={"2xl"}
-    >
+    <Box bg={useColorModeValue("background.light", "background.dark")} mt={20}>
       <Stack
         as={"Box"}
         textAlign={"center"}
