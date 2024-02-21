@@ -5,6 +5,7 @@ import {
   Highlight,
   Stack,
   Heading,
+  Center,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -14,7 +15,8 @@ const Home = () => {
   return (
     <Box
       bg={useColorModeValue("background.light", "background.dark")}
-      h={"100%"}
+      mt={20}
+      h={"2xl"}
     >
       <Stack
         as={"Box"}
