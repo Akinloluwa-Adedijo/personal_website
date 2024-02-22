@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Center>
       <Box
-        maxW={"md"}
+        maxW={"3xl"}
         bg={useColorModeValue("background.light", "background.dark")}
         mt={20}
         p={10}
@@ -24,7 +24,7 @@ const About = () => {
           About Me
         </Heading>
 
-        <Text fontWeight={500} textAlign={"left"} mt={5}>
+        <Text fontWeight={200} textAlign={"left"} mt={5} fontSize={18}>
           I am a fourth-year GIS student at Simon Fraser University (SFU). The
           GIS degree is a collaboration between the Department of Computer
           Science and Geography. Throughout my university experience, I have
