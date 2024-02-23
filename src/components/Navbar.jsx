@@ -32,6 +32,7 @@ const NavigationLinks = (props) => {
         textDecoration: "none",
         bg: useColorModeValue("primary", "#1E3849"),
       }}
+      fontSize={"lg"}
     >
       {children}
     </Box>
@@ -44,7 +45,7 @@ const Navbar = () => {
   return (
     <Box bg={useColorModeValue("background.light", "background.dark")} p={2}>
       <Flex h={16} alignItems="center" justifyContent={"space-between"}>
-        <Box p={1}>
+        <Box p={2}>
           <Image
             boxSize={16}
             src={colorMode === "light" ? LogoLight : LogoDark}

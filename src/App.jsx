@@ -13,12 +13,11 @@ function App() {
   return (
     <Box
       textAlign="center"
-      fontSize="xl"
       bg={useColorModeValue("background.light", "background.dark")}
     >
       <Navbar />
       <Home />
-      <About />
+      {/* <About /> */}
     </Box>
   );
 }
