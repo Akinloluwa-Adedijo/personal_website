@@ -13,18 +13,15 @@ import {
   Avatar,
   Text,
   Image,
+  UnorderedList,
+  ListItem,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { CheckCircleIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <Box
-      bg={useColorModeValue("background.light", "background.dark")}
-      mt={5}
-      h={"80vh"}
-    >
+    <Box bg={useColorModeValue("background.light", "background.dark")}>
       <Center>
         <Flex alignItems={"center"} minW={"200px"} p={10} gap={10}>
           <Box textAlign={"left"}>
@@ -55,7 +52,7 @@ const Home = () => {
         </Flex>
       </Center>
       <Center bg={useColorModeValue("background.light", "background.dark")}>
-        <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={20} p={10}>
+        <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={10} p={10}>
           <Heading
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
@@ -84,7 +81,26 @@ const Home = () => {
           >
             Tech Stack
           </Heading>
-          <Text></Text>
+          <UnorderedList textAlign={"left"}>
+            <ListItem>
+              <Text as={"span"} fontWeight={600}>
+                Programming Languages:
+              </Text>{" "}
+              Html, CSS, Javascript, React, SQL, Python
+            </ListItem>
+            <ListItem>
+              <Text as={"span"} fontWeight={600}>
+                GIS Tools:
+              </Text>{" "}
+              ArcGIS Pro, ArcGIS Online, QGIS, Google Earth Pro
+            </ListItem>
+            <ListItem>
+              <Text as={"span"} fontWeight={600}>
+                Design:
+              </Text>
+              Figma, Adobe Illustrator, Adobe Photoshop, GIMP, InkScape
+            </ListItem>
+          </UnorderedList>
           <Heading
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
@@ -95,9 +111,8 @@ const Home = () => {
             Experience
           </Heading>
           <Box textAlign={"left"} gap={10}>
-            {/* <CheckCircleIcon /> */}
             <Text fontWeight={600}>
-              Data Analyst Internship @ App Growth Network
+              Data Analyst Internship @ App growth Network
             </Text>
             <Text fontSize={"sm"}>January - May 2022</Text>
           </Box>
