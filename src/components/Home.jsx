@@ -64,7 +64,7 @@ const Home = () => {
           >
             About Me
           </Heading>
-          <Text fontSize={{ base: "sm", md: "md" }}>
+          <Text fontSize={{ base: "sm", md: "md" }} textAlign={"left"}>
             Hey, Welcome to my small corner of the internet where I unveil a bit
             about myself, projects and things i find interesting. First a bit
             about me. I'm about to be a graduate of the GIS program at Simon
@@ -81,10 +81,26 @@ const Home = () => {
             fontSize={{ base: "2xl", md: "4xl" }}
             color={useColorModeValue("accent.light", "accent.dark")}
             mb={2}
+          >
+            Tech Stack
+          </Heading>
+          <Text></Text>
+          <Heading
+            as={"h3"}
+            fontSize={{ base: "2xl", md: "4xl" }}
+            color={useColorModeValue("accent.light", "accent.dark")}
+            mb={2}
             mt={2}
           >
             Experience
           </Heading>
+          <Box textAlign={"left"} gap={10}>
+            {/* <CheckCircleIcon /> */}
+            <Text fontWeight={600}>
+              Data Analyst Internship @ App Growth Network
+            </Text>
+            <Text fontSize={"sm"}>January - May 2022</Text>
+          </Box>
         </Box>
       </Center>
     </Box>
