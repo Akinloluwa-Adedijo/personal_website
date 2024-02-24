@@ -15,6 +15,7 @@ import {
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { CheckCircleIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
           <Box textAlign={"left"}>
             <Heading
               as="h2"
+              fontSize={{ base: "2xl", md: "4xl" }}
               color={useColorModeValue("accent.light", "accent.dark")}
             >
               Akinloluwa Adedijo
@@ -51,6 +53,39 @@ const Home = () => {
             size="lg"
           />
         </Flex>
+      </Center>
+      <Center bg={useColorModeValue("background.light", "background.dark")}>
+        <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={20} p={10}>
+          <Heading
+            as={"h3"}
+            fontSize={{ base: "2xl", md: "4xl" }}
+            color={useColorModeValue("accent.light", "accent.dark")}
+            mb={2}
+          >
+            About Me
+          </Heading>
+          <Text fontSize={{ base: "sm", md: "md" }}>
+            Hey, Welcome to my small corner of the internet where I unveil a bit
+            about myself, projects and things i find interesting. First a bit
+            about me. I'm about to be a graduate of the GIS program at Simon
+            Fraser University (My Convocation Ceremony is in June and I'm pretty
+            excited) The GIS degree is a collaboration between the Department of
+            Computer Science and Geography, allowing me to experience an unique
+            avenue to combine knowledge from both disciplines. Throughout my
+            time at SFU, I've had the opportunity to explore a diverse range of
+            classes and projects, all of which have contributed to my growth and
+            development. <br />
+          </Text>
+          <Heading
+            as={"h3"}
+            fontSize={{ base: "2xl", md: "4xl" }}
+            color={useColorModeValue("accent.light", "accent.dark")}
+            mb={2}
+            mt={2}
+          >
+            Experience
+          </Heading>
+        </Box>
       </Center>
     </Box>
   );
