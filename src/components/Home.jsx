@@ -21,9 +21,9 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <Box bg={useColorModeValue("background.light", "background.dark")}>
+    <Box>
       <Center>
-        <Flex alignItems={"center"} minW={"200px"} p={10} gap={10}>
+        <Flex alignItems={"center"} minW={"300px"} p={10} gap={10}>
           <Box textAlign={"left"}>
             <Heading
               as="h2"

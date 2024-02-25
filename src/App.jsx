@@ -6,7 +6,7 @@ import viteLogo from "/vite.svg";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
+import Projects from "./components/Projects";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
     >
       <Navbar />
       <Home />
+      <Projects />
     </Box>
   );
 }
