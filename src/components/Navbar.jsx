@@ -15,7 +15,7 @@ import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
 
-const Links = ["About Me", "Projects", "Contact"];
+const Links = ["About Me", "Projects", "Graphic Design", "Contact"];
 
 const NavigationLinks = (props) => {
   const { children } = props;
