@@ -8,6 +8,8 @@ import {
   Spacer,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+const names = ["All", "Web Development", "GIS"];
 const Projects = () => {
   return (
     <Box h={"max-content"}>
@@ -21,7 +23,17 @@ const Projects = () => {
       <Center>
         <Flex>
           <Flex direction={"row"} gap={10}>
-            <Button
+            {names.map((name) => (
+              <Button
+                color={useColorModeValue("text.light", "text.dark")}
+                colorScheme="primary"
+                variant={"outline"}
+                key={name}
+              >
+                {name}
+              </Button>
+            ))}
+            {/* <Button
               color={useColorModeValue("text.light", "text.dark")}
               colorScheme="primary"
               variant={"outline"}
@@ -31,7 +43,7 @@ const Projects = () => {
             <Spacer />
             <Button>Web Development</Button>
             <Spacer />
-            <Button>GIS</Button>
+            <Button>GIS</Button> */}
           </Flex>
         </Flex>
       </Center>
