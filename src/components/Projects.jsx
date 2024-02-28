@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
@@ -13,27 +13,29 @@ const names = ["All", "Web Development", "GIS"];
 
 const ProjectToggleButton = (props) => {
   const { children } = props;
-  // console.log(children);
+  const [active, setActive] = useState("All");
+  const [bright, setbright] = useState("true");
+
+  const toggleActive = (name) => {
+    setActive(name);
+    console.log(`This button should be active ${active}`);
+  };
+
   return (
-    <Box
-      as="button"
+    <Button
+      color={useColorModeValue("tect.light", "primary")}
       px={2}
       py={1}
-      height="36px"
-      rounded="md"
-      color={useColorModeValue("text.light", "primary")}
-      fontSize="lg"
+      bg={"none"}
       _hover={{
         bg: "primary",
         color: "text.light",
       }}
-      _active={{
-        bg: "primary",
-        color: "text.light",
-      }}
+      _active={{ bg: "primary", color: "text.light" }}
+      onClick={() => toggleActive(children)}
     >
       {children}
-    </Box>
+    </Button>
   );
 };
 const Projects = () => {
