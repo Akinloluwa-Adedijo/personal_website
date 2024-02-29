@@ -13,6 +13,7 @@ const colors = {
     dark: "#000000",
   },
   primary: "#8FB3FF",
+  primary_dark: "#1F345F",
   secondary: {
     light: "#EBF1FF",
     dark: "#001952",
