@@ -14,6 +14,7 @@ const colors = {
   },
   primary: "#8FB3FF",
   primary_dark: "#1F345F",
+  primary_dark_alter: "#1D2F52",
   secondary: {
     light: "#EBF1FF",
     dark: "#001952",

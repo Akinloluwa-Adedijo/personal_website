@@ -11,6 +11,19 @@ import {
 
 const names = ["All", "Web Development", "GIS"];
 
+const buttonNames = [
+  { name: "All", value: "all" },
+  { name: "Web Development", value: "web_development" },
+  { name: "GIS", value: "gis" },
+];
+
+const projects = [
+  {
+    id: 1,
+    name,
+  },
+];
+
 const ProjectToggleButton = (props) => {
   const { children } = props;
   const [active, setActive] = useState("All");
