@@ -20,7 +20,34 @@ const buttonNames = [
 const projects = [
   {
     id: 1,
-    name,
+    title: "Essential Services in Vancouver",
+    category: "gis",
+    heading1: "Overview",
+    p1: "The Essential Services is a web mapping application that provides users with the ability to locate essential facilities around Vancouver.",
+    p2: "This Webapp was made using ArcGIS Online which is a cloud based mapping platform for the creation of maps, analysis of data which can be shared to the public accessed from any device.",
+    heading2: "Tools",
+    p3: "ArcGIS Online",
+    heading3: "Gallery",
+    image1: "put reference to image",
+    image2: "put reference to image",
+  },
+  {
+    id: 2,
+    title:
+      "Suitable Areas for MCE Analysis for Afforestation in Burnaby, BC Native tree Species",
+    category: "gis",
+  },
+  {
+    id: 3,
+    title:
+      "Modelling the Feasibility of Mass Evacuations in High Rise Buildings using Unity",
+    category: "gis",
+  },
+  {
+    id: 4,
+    title:
+      "Visualizing Mass Evacuation Scenarios in different Interfaces( Augmented Reality and Desktop) in Unity",
+    category: "gis",
   },
 ];
 
