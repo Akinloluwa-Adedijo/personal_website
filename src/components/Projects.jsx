@@ -36,12 +36,17 @@ const projects = [
     title:
       "Suitable Areas for MCE Analysis for Afforestation in Burnaby, BC Native tree Species",
     category: "gis",
+    heading: "Overview",
+    p1: "",
+    p2: "",
   },
   {
     id: 3,
     title:
       "Modelling the Feasibility of Mass Evacuations in High Rise Buildings using Unity",
     category: "gis",
+    heading: "",
+    p1: "",
   },
   {
     id: 4,
