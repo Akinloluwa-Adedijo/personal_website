@@ -32,6 +32,9 @@ const projects = [
       title: "Access the Essential Services Website and Brochure",
       link: "https://simonfraseru.maps.arcgis.com/apps/webappviewer/index.html?id=af7fd55c905a4a719292c820678cb1d7",
       document: "link to be put here",
+      additional_media: {
+        images: [],
+      },
     },
   },
   {
@@ -51,6 +54,10 @@ const projects = [
     project_details: {
       title: "Access the full paper:",
       link: "put link to the paper from assets",
+      document: "link to be put here",
+      additional_media: {
+        images: [],
+      },
     },
   },
   {
@@ -67,6 +74,10 @@ const projects = [
     project_details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
+      document: "link to be put here",
+      additional_media: {
+        images: [],
+      },
     },
   },
   {
@@ -83,6 +94,10 @@ const projects = [
     project_details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
+      document: "link to be put here",
+      additional_media: {
+        images: [],
+      },
     },
   },
 ];
