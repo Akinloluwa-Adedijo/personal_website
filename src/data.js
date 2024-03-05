@@ -84,7 +84,7 @@ export const projects = [
       link: "put link to the youtube playlist showing all videos produced",
       document: "",
       additional_media: {
-        images: [geog457_image],
+        images: [geog457],
       },
     },
   },
