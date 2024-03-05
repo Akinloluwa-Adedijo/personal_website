@@ -88,4 +88,15 @@ export const projects = [
       },
     },
   },
+  {
+    id: 5,
+    title:
+      "Cellular Automata Modelling of the 2022 Keremeos Creek and Fry Creek Wildfires in British Columbia",
+    category: "gis",
+    heading1: "Overview",
+    collaborators: {
+      /*put kevin and jennifer emails here*/
+    },
+    p1: "This project uses Cellular Automata (CA) to build a model of wildfire propagation using data of wildfires in British Columbia (BC) for 2022. Our model is inspired by previous CA wildfire models, and incorporates data on fuel types, road infrastructure, and topography to make a probabilistic model of wildfire spread for given ignition points under simulated wind conditions. Our model also incorporates stochastic processes to represent wildfire spotting. The project demonstrates the ability of CA models to represent fire propagation as a macro-phenomenon emerging from local interactions. Models were run five times each to capture different outcomes given the stochastic and probabilistic transition rules. Results show that the model results in comparable size, shape, and boundaries of the recorded wildfire perimeters given the same ignition points, though each ignition point can result in vastly different model outcomes given stochastic processes. ",
+  },
 ];
