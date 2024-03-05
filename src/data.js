@@ -2,6 +2,8 @@ const geog351pdf = "../src/assets/GEOG351_Mini_Project_Brochure.pdf";
 const geog355pdf = "../src/assets/geog355.pdf";
 import geog351_image from "../src/assets/geog351_mini_proj_screenshot.png";
 import geog355_image from "../src/assets/geog355_screenshot.png";
+import geog356_image from "../src/assets/geog356_screenshot.png";
+import geog457_image from "../src/assets/geog457_screenshot.png";
 
 export const projects = [
   {
@@ -60,9 +62,9 @@ export const projects = [
     project_details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
-      document: "link to be put here",
+      document: "",
       additional_media: {
-        images: [],
+        images: [geog356_image],
       },
     },
   },
@@ -80,9 +82,9 @@ export const projects = [
     project_details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
-      document: "link to be put here",
+      document: "",
       additional_media: {
-        images: [],
+        images: [geog457_image],
       },
     },
   },
