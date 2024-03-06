@@ -8,6 +8,11 @@ import geog356_image from "../src/assets/geog356_screenshot.png";
 import geog457_image from "../src/assets/geog457_screenshot.png";
 import geog451_image from "../src/assets/geog451_screenshot.png";
 
+export const projectButtons = [
+  { name: "All", value: "all" },
+  { name: "Web Development", value: "web_development" },
+  { name: "GIS", value: "gis" },
+];
 export const projects = [
   {
     id: 1,
