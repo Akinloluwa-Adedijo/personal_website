@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -7,30 +7,24 @@ import {
   Flex,
   Spacer,
   useColorModeValue,
+  filter,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
-import { getProjects } from "../data_service";
+import { getProjects, filterProject } from "../data_service";
 
-const ProjectToggleButton = (props) => {
-  const { children } = props;
-
-  return (
-    <Button
-      color={useColorModeValue("tect.light", "primary")}
-      px={2}
-      py={1}
-      bg={"none"}
-      _hover={{
-        bg: "primary",
-        color: "text.light",
-      }}
-      _active={{ bg: "primary", color: "text.light" }}
-    >
-      {children}
-    </Button>
-  );
-};
 const Projects = () => {
+  const [filtProject, setFiltProject] = useState(null);
+  useEffect(() => {
+    setFiltProject(getProjects());
+  }, []);
+
+  function handleProjectType(e) {
+    let type = e.target.value;
+    type !== "all" ? "true" : "false";
+    type !== "all"
+      ? setFiltProject(filterProject(type))
+      : setFiltProject(getProjects());
+  }
   return (
     <Box h={"max-content"}>
       <Heading
@@ -43,16 +37,34 @@ const Projects = () => {
       <Center>
         <Flex>
           <Flex direction={"row"} gap={10}>
-            {/* <ProjectToggleButton>random</ProjectToggleButton> */}
             {projectButtons &&
               projectButtons.map((type, index) => (
-                <ProjectToggleButton key={index} value={type.value}>
+                <Button
+                  key={index}
+                  value={type.value}
+                  onClick={handleProjectType}
+                  color={useColorModeValue("tect.light", "primary")}
+                  px={2}
+                  py={1}
+                  bg={"none"}
+                  _hover={{
+                    bg: "primary",
+                    color: "text.light",
+                  }}
+                  _active={{ bg: "primary", color: "text.light" }}
+                >
                   {type.name}
-                </ProjectToggleButton>
+                </Button>
               ))}
           </Flex>
         </Flex>
       </Center>
+      {filtProject &&
+        filtProject.map((type) => (
+          <ul key={type.id}>
+            <li>{type.title}</li>
+          </ul>
+        ))}
     </Box>
   );
 };

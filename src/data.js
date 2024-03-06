@@ -118,4 +118,9 @@ export const projectsInfo = [
       },
     },
   },
+  {
+    id: 6,
+    title: "cs filler text",
+    category: "web_development",
+  },
 ];
