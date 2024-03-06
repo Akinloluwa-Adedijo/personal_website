@@ -1,9 +1,12 @@
 const geog351pdf = "../src/assets/GEOG351_Mini_Project_Brochure.pdf";
 const geog355pdf = "../src/assets/geog355.pdf";
+const geog451pdf =
+  "../src/assets/geog451_final_proj_adedijo_matheson_pegram.pdf";
 import geog351_image from "../src/assets/geog351_mini_proj_screenshot.png";
 import geog355_image from "../src/assets/geog355_screenshot.png";
 import geog356_image from "../src/assets/geog356_screenshot.png";
 import geog457_image from "../src/assets/geog457_screenshot.png";
+import geog451_image from "../src/assets/geog451_screenshot.png";
 
 export const projects = [
   {
@@ -84,7 +87,7 @@ export const projects = [
       link: "put link to the youtube playlist showing all videos produced",
       document: "",
       additional_media: {
-        images: [geog457],
+        images: [geog457_image],
       },
     },
   },
@@ -98,5 +101,16 @@ export const projects = [
       /*put kevin and jennifer emails here*/
     },
     p1: "This project uses Cellular Automata (CA) to build a model of wildfire propagation using data of wildfires in British Columbia (BC) for 2022. Our model is inspired by previous CA wildfire models, and incorporates data on fuel types, road infrastructure, and topography to make a probabilistic model of wildfire spread for given ignition points under simulated wind conditions. Our model also incorporates stochastic processes to represent wildfire spotting. The project demonstrates the ability of CA models to represent fire propagation as a macro-phenomenon emerging from local interactions. Models were run five times each to capture different outcomes given the stochastic and probabilistic transition rules. Results show that the model results in comparable size, shape, and boundaries of the recorded wildfire perimeters given the same ignition points, though each ignition point can result in vastly different model outcomes given stochastic processes. ",
+    p2: "put my role in this project here",
+    heading2: "Tools",
+    p3: "ArcGIS Pro",
+    project_details: {
+      title: "Access the full paper",
+      link: "",
+      document: [geog451pdf],
+      additional_media: {
+        images: [],
+      },
+    },
   },
 ];
