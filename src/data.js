@@ -13,7 +13,7 @@ export const projectButtons = [
   { name: "Web Development", value: "web_development" },
   { name: "GIS", value: "gis" },
 ];
-export const projects = [
+export const projectsInfo = [
   {
     id: 1,
     title: "Essential Services in Vancouver",

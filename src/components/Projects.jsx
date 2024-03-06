@@ -9,6 +9,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
+import { getProjects } from "../data_service";
+
 const ProjectToggleButton = (props) => {
   const { children } = props;
 
@@ -42,11 +44,12 @@ const Projects = () => {
         <Flex>
           <Flex direction={"row"} gap={10}>
             {/* <ProjectToggleButton>random</ProjectToggleButton> */}
-            {projectButtons.map((type, index) => (
-              <ProjectToggleButton key={index} value={type.value}>
-                {type.name}
-              </ProjectToggleButton>
-            ))}
+            {projectButtons &&
+              projectButtons.map((type, index) => (
+                <ProjectToggleButton key={index} value={type.value}>
+                  {type.name}
+                </ProjectToggleButton>
+              ))}
           </Flex>
         </Flex>
       </Center>
