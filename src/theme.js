@@ -6,15 +6,16 @@ import { extendTheme } from "@chakra-ui/react";
 const colors = {
   text: {
     light: "#000000",
-    dark: "#E9F7F9",
+    dark: "#FFFFFF",
   },
   background: {
     light: "#E9F7F9",
     dark: "#000000",
   },
   primary: "#8FB3FF",
-  primary_dark: "#1F345F",
-  primary_dark_alter: "#1D2F52",
+  primary_light: "#1F345F",
+  primary_dark: "#8FB3FF",
+  // primary_dark_alter: "#1D2F52",
   secondary: {
     light: "#EBF1FF",
     dark: "#001952",

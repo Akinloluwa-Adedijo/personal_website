@@ -43,7 +43,7 @@ const Projects = () => {
                   key={index}
                   value={type.value}
                   onClick={handleProjectType}
-                  color={useColorModeValue("tect.light", "primary")}
+                  color={useColorModeValue("text.light", "primary")}
                   px={2}
                   py={1}
                   bg={"none"}
