@@ -30,7 +30,8 @@ const NavigationLinks = (props) => {
       color={useColorModeValue("text.light", "text.dark")}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("primary", "#1E3849"),
+        bg: useColorModeValue("primary.light", "primary.dark"),
+        color: useColorModeValue("text.dark", "text.light"),
       }}
       fontSize={"lg"}
     >

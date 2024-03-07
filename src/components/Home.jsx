@@ -28,7 +28,7 @@ const Home = () => {
             <Heading
               as="h2"
               fontSize={{ base: "2xl", md: "4xl" }}
-              color={useColorModeValue("accent.light", "accent.dark")}
+              color={useColorModeValue("primary.light", "primary.dark")}
             >
               Akinloluwa Adedijo
             </Heading>
@@ -46,7 +46,7 @@ const Home = () => {
           </Box>
           <Avatar
             name="Akinloluwa Adedijo"
-            bg={useColorModeValue("accent.light", "accent.dark")}
+            bg={useColorModeValue("primary.light", "primary.dark")}
             size="lg"
           />
         </Flex>
@@ -56,7 +56,7 @@ const Home = () => {
           <Heading
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("accent.light", "accent.dark")}
+            color={useColorModeValue("primary.light", "primary.dark")}
             mb={2}
           >
             About Me
@@ -76,7 +76,7 @@ const Home = () => {
           <Heading
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("accent.light", "accent.dark")}
+            color={useColorModeValue("primary.light", "primary.dark")}
             mb={2}
           >
             Tech Stack
@@ -104,7 +104,7 @@ const Home = () => {
           <Heading
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("accent.light", "accent.dark")}
+            color={useColorModeValue("primary.light", "primary.dark")}
             mb={2}
             mt={2}
           >

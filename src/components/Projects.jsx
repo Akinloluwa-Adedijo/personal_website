@@ -30,7 +30,7 @@ const Projects = () => {
       <Heading
         as="h2"
         fontSize={{ base: "2xl", md: "4xl" }}
-        color={useColorModeValue("accent.light", "accent.dark")}
+        color={useColorModeValue("primary.light", "primary.dark")}
       >
         Projects
       </Heading>
@@ -43,13 +43,14 @@ const Projects = () => {
                   key={index}
                   value={type.value}
                   onClick={handleProjectType}
-                  color={useColorModeValue("text.light", "primary")}
+                  color={useColorModeValue("text.light", "text.dark")}
                   px={2}
                   py={1}
                   bg={"none"}
                   _hover={{
-                    bg: "primary",
-                    color: "text.light",
+                    textDecoration: "none",
+                    bg: useColorModeValue("primary.light", "primary.dark"),
+                    color: useColorModeValue("text.dark", "text.light"),
                   }}
                   _active={{ bg: "primary", color: "text.light" }}
                 >
