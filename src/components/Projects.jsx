@@ -8,6 +8,11 @@ import {
   Spacer,
   useColorModeValue,
   filter,
+  SimpleGrid,
+  Card,
+  Stack,
+  CardBody,
+  Image,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
@@ -68,12 +73,40 @@ const Projects = () => {
           </Flex>
         </Flex>
       </Center>
-      {filtProject &&
-        filtProject.map((type) => (
-          <ul key={type.id}>
-            <li>{type.title}</li>
-          </ul>
-        ))}
+      <Center>
+        <SimpleGrid
+          spacing={4}
+          templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
+          // maxW={"4xl"}
+        >
+          {filtProject &&
+            filtProject.map((type) => (
+              // <ul key={type.id}>
+              //   <li>{type.title}</li>
+              // </ul>
+              <Card bg={useColorModeValue("primary.light", "primary.dark")}>
+                <CardBody>
+                  <Image
+                    src={type.project_details.additional_media.images[0]}
+                    fit={"contain"}
+                  />
+                  <Stack mt={2} spacing={3}>
+                    <Heading
+                      size={"md"}
+                      color={useColorModeValue("text.dark", "text.light")}
+                      fontSize={"md"}
+                      textAlign={"left"}
+                      overflow={"fill"}
+                    >
+                      {type.title}
+                    </Heading>
+                  </Stack>
+                  {/* {console.log(type.project_details.additional_media.images[0])} */}
+                </CardBody>
+              </Card>
+            ))}
+        </SimpleGrid>
+      </Center>
     </Box>
   );
 };

@@ -35,8 +35,7 @@ export const projectsInfo = [
   },
   {
     id: 2,
-    title:
-      "Suitable Areas for MCE Analysis for Afforestation in Burnaby, BC Native tree Species",
+    title: "Suitable Areas for Afforestation in Burnaby, BC",
     category: "gis",
     heading1: "Overview",
     collaborators: {
@@ -59,7 +58,7 @@ export const projectsInfo = [
   {
     id: 3,
     title:
-      "Modelling the Feasibility of Mass Evacuations in High Rise Buildings using Unity",
+      "Modelling the Feasibility of Mass Evacuations in High Rise Buildings",
     category: "gis",
     heading1: "Overview",
     collaborators: {},
@@ -79,7 +78,7 @@ export const projectsInfo = [
   {
     id: 4,
     title:
-      "Visualizing Mass Evacuation Scenarios in different Interfaces( Augmented Reality and Desktop) in Unity",
+      "Visualizing Mass Evacuations in different Interfaces(AR vs Desktop)",
     category: "gis",
     heading1: "Overview",
     collaborators: {},
@@ -99,7 +98,7 @@ export const projectsInfo = [
   {
     id: 5,
     title:
-      "Cellular Automata Modelling of the 2022 Keremeos Creek and Fry Creek Wildfires in British Columbia",
+      "Cellular Automata Modelling of the 2022 K50863 and N71980 in British Columbia",
     category: "gis",
     heading1: "Overview",
     collaborators: {
@@ -114,13 +113,13 @@ export const projectsInfo = [
       link: "",
       document: [geog451pdf],
       additional_media: {
-        images: [],
+        images: [geog451_image],
       },
     },
   },
-  {
-    id: 6,
-    title: "cs filler text",
-    category: "web_development",
-  },
+  // {
+  //   id: 6,
+  //   title: "cs filler text",
+  //   category: "web_development",
+  // },
 ];
