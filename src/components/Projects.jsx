@@ -79,9 +79,7 @@ const Projects = () => {
       <Center>
         <SimpleGrid
           spacing={4}
-          // w={"xs"}
           // templateColumns="1fr 1fr"
-          // templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
           columns={[1, null, 2]}
           p={5}
         >
@@ -91,7 +89,6 @@ const Projects = () => {
                 key={index}
                 overflow={"hidden"}
                 maxW={"400px"}
-                // bg={useColorModeValue("primary.light", "primary.dark")}
                 border={"1px"}
                 rounded={"md"}
                 textColor={useColorModeValue("text.dark", "text.light")}
