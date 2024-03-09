@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
-  const [activeButton, setActiveButton] = useState("all");
+  const [activeButton, setActiveButton] = useState(0);
   useEffect(() => {
     setFiltProject(getProjects());
   }, []);
@@ -79,7 +79,9 @@ const Projects = () => {
       <Center>
         <SimpleGrid
           spacing={4}
-          templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+          // w={"xs"}
+          // templateColumns="1fr 1fr"
+          columns={[1, null, 2, 2, 3]}
           p={5}
         >
           {filtProject &&
@@ -87,7 +89,7 @@ const Projects = () => {
               <Box
                 key={index}
                 overflow={"hidden"}
-                w={"xs"}
+                maxW={"400px"}
                 // bg={useColorModeValue("primary.light", "primary.dark")}
                 border={"1px"}
                 rounded={"md"}
@@ -101,7 +103,6 @@ const Projects = () => {
                   />
                 </Box>
                 <Flex
-                  a
                   bg={useColorModeValue("primary.light", "primary.dark")}
                   _hover={{
                     bg: useColorModeValue("accent.light", "accent.dark"),
