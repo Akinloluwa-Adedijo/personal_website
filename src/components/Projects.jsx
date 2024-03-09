@@ -81,7 +81,8 @@ const Projects = () => {
           spacing={4}
           // w={"xs"}
           // templateColumns="1fr 1fr"
-          columns={[1, null, 2, 2, 3]}
+          // templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
+          columns={[1, null, 2]}
           p={5}
         >
           {filtProject &&
@@ -98,6 +99,9 @@ const Projects = () => {
               >
                 <Box>
                   <Image
+                    h={"250px"}
+                    maxH={"300px"}
+                    w={"100%"}
                     src={type.project_details.additional_media.images[0]}
                     objectFit={"cover"}
                   />

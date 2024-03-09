@@ -16,7 +16,7 @@ export const projectButtons = [
 export const projectsInfo = [
   {
     id: 1,
-    title: "Essential Services in Vancouver",
+    title: "Mapping Essential Services in Vancouver, British Columbia",
     category: "gis",
     heading1: "Overview",
     collaborators: {},
@@ -35,7 +35,7 @@ export const projectsInfo = [
   },
   {
     id: 2,
-    title: "Suitable Areas for Afforestation in Burnaby, BC",
+    title: "Suitable Areas for Afforestation in Burnaby, British Columbia",
     category: "gis",
     heading1: "Overview",
     collaborators: {
