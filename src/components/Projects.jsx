@@ -12,14 +12,17 @@ import {
   Card,
   Stack,
   CardBody,
+  CardFooter,
   Image,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
-  const [activeButton, setActiveButton] = useState(0);
+  const [activeButton, setActiveButton] = useState("all");
   useEffect(() => {
     setFiltProject(getProjects());
   }, []);
@@ -76,34 +79,43 @@ const Projects = () => {
       <Center>
         <SimpleGrid
           spacing={4}
-          templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
-          // maxW={"4xl"}
+          templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+          p={5}
         >
           {filtProject &&
-            filtProject.map((type) => (
-              // <ul key={type.id}>
-              //   <li>{type.title}</li>
-              // </ul>
-              <Card bg={useColorModeValue("primary.light", "primary.dark")}>
-                <CardBody>
+            filtProject.map((type, index) => (
+              <Box
+                key={index}
+                overflow={"hidden"}
+                w={"xs"}
+                // bg={useColorModeValue("primary.light", "primary.dark")}
+                border={"1px"}
+                rounded={"md"}
+                textColor={useColorModeValue("text.dark", "text.light")}
+                borderColor={useColorModeValue("primary.light", "primary.dark")}
+              >
+                <Box>
                   <Image
                     src={type.project_details.additional_media.images[0]}
-                    fit={"contain"}
+                    objectFit={"cover"}
                   />
-                  <Stack mt={2} spacing={3}>
-                    <Heading
-                      size={"md"}
-                      color={useColorModeValue("text.dark", "text.light")}
-                      fontSize={"md"}
-                      textAlign={"left"}
-                      overflow={"fill"}
-                    >
-                      {type.title}
-                    </Heading>
-                  </Stack>
-                  {/* {console.log(type.project_details.additional_media.images[0])} */}
-                </CardBody>
-              </Card>
+                </Box>
+                <Flex
+                  a
+                  bg={useColorModeValue("primary.light", "primary.dark")}
+                  _hover={{
+                    bg: useColorModeValue("accent.light", "accent.dark"),
+                  }}
+                  p={2}
+                  alignItems={"center"}
+                  textAlign={"left"}
+                  justifyContent={"space-between"}
+                  cursor={"pointer"}
+                >
+                  <Box>{type.title}</Box>
+                  <ArrowForwardIcon />
+                </Flex>
+              </Box>
             ))}
         </SimpleGrid>
       </Center>

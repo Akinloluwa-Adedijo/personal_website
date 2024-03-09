@@ -97,8 +97,7 @@ export const projectsInfo = [
   },
   {
     id: 5,
-    title:
-      "Cellular Automata Modelling of the 2022 K50863 and N71980 in British Columbia",
+    title: "Cellular Automata Modelling K50863 and N71980 in British Columbia",
     category: "gis",
     heading1: "Overview",
     collaborators: {
