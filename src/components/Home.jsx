@@ -83,19 +83,31 @@ const Home = () => {
           </Heading>
           <UnorderedList textAlign={"left"}>
             <ListItem>
-              <Text as={"span"} fontWeight={600}>
+              <Text
+                as={"span"}
+                fontWeight={600}
+                color={useColorModeValue("primary.light", "primary.dark")}
+              >
                 Programming Languages:
               </Text>{" "}
               Html, CSS, Javascript, React, SQL, Python
             </ListItem>
             <ListItem>
-              <Text as={"span"} fontWeight={600}>
+              <Text
+                as={"span"}
+                fontWeight={600}
+                color={useColorModeValue("primary.light", "primary.dark")}
+              >
                 GIS Tools:
               </Text>{" "}
               ArcGIS Pro, ArcGIS Online, QGIS, Google Earth Pro
             </ListItem>
             <ListItem>
-              <Text as={"span"} fontWeight={600}>
+              <Text
+                as={"span"}
+                fontWeight={600}
+                color={useColorModeValue("primary.light", "primary.dark")}
+              >
                 Design:
               </Text>
               Figma, Adobe Illustrator, Adobe Photoshop, GIMP, InkScape
