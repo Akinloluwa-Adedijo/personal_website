@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   Box,
   Button,
@@ -14,6 +14,14 @@ import {
   CardBody,
   CardFooter,
   Image,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerCloseButton,
+  DrawerBody,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
@@ -23,6 +31,8 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
   const [activeButton, setActiveButton] = useState(0);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
   useEffect(() => {
     setFiltProject(getProjects());
   }, []);
@@ -114,13 +124,43 @@ const Projects = () => {
                   justifyContent={"space-between"}
                   cursor={"pointer"}
                 >
-                  <Box>{type.title}</Box>
-                  <ArrowForwardIcon />
+                  <Box ref={btnRef} onClick={onOpen}>
+                    {type.title}{" "}
+                  </Box>
+                  {/* <Button siz={"md"} bg={"none"}>
+                    {<ArrowForwardIcon />}
+                  </Button> */}
                 </Flex>
               </Box>
             ))}
         </SimpleGrid>
       </Center>
+      <>
+        {" "}
+        <Drawer
+          isOpen={isOpen}
+          placement="right"
+          onClose={onClose}
+          finalFocusRef={btnRef}
+        >
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerHeader>Create your account</DrawerHeader>
+
+            <DrawerBody>
+              {/* <Input placeholder="Type here..." /> */}
+            </DrawerBody>
+
+            <DrawerFooter>
+              <Button variant="outline" mr={3} onClick={onClose}>
+                Cancel
+              </Button>
+              <Button colorScheme="blue">Save</Button>
+            </DrawerFooter>
+          </DrawerContent>
+        </Drawer>
+      </>
     </Box>
   );
 };
