@@ -32,23 +32,17 @@ const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
   const [activeButton, setActiveButton] = useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const { getDisclosureProps, getButtonProps } = useDisclosure();
-  // const buttonProps = getButtonProps();
-  // const disclosureProps = getDisclosureProps();
-  // const [selectedProject, setSelectedProject] = useState({});
+  const [selectedProject, setSelectedProject] = useState({});
 
-  const btnRef = React.useRef();
   useEffect(() => {
     setFiltProject(getProjects());
   }, []);
 
   function handleProjectType(e, index) {
     let type = e.target.value;
-    type !== "all" ? "true" : "false";
     type !== "all"
       ? setFiltProject(filterProject(type))
       : setFiltProject(getProjects());
-    // console.log(index);
     setActiveButton(index);
   }
 
@@ -93,12 +87,7 @@ const Projects = () => {
         </Flex>
       </Center>
       <Center>
-        <SimpleGrid
-          spacing={4}
-          // templateColumns="1fr 1fr"
-          columns={[1, null, 2]}
-          p={5}
-        >
+        <SimpleGrid spacing={4} columns={[1, null, 2]} p={5}>
           {filtProject &&
             filtProject.map((type, index) => (
               <Box
@@ -130,7 +119,12 @@ const Projects = () => {
                   justifyContent={"space-between"}
                   cursor={"pointer"}
                 >
-                  <Box onClick={onOpen} ref={btnRef}>
+                  <Box
+                    onClick={() => {
+                      onOpen();
+                      setSelectedProject(type);
+                    }}
+                  >
                     {type.title}
                   </Box>
                 </Flex>
@@ -143,21 +137,25 @@ const Projects = () => {
           isOpen={isOpen}
           placement="right"
           onClose={onClose}
-          finalFocusRef={btnRef}
+          size={{ base: "full", sm: "md" }}
         >
           <DrawerOverlay />
-          <DrawerContent>
+          <DrawerContent
+            textColor={useColorModeValue("text.light", "text.dark")}
+            bg={useColorModeValue("background.light", "background.dark")}
+          >
             <DrawerCloseButton />
-            <DrawerHeader>{}</DrawerHeader>
+            <DrawerHeader
+              w={{ base: "sm", sm: "md", md: "lg" }}
+              fontSize={{ base: 20, sm: 24 }}
+              textOverflow={"hidden"}
+            >
+              {selectedProject.title}
+            </DrawerHeader>
 
             <DrawerBody></DrawerBody>
 
-            <DrawerFooter>
-              <Button variant="outline" mr={3}>
-                Cancel
-              </Button>
-              <Button colorScheme="blue">Save</Button>
-            </DrawerFooter>
+            <DrawerFooter></DrawerFooter>
           </DrawerContent>
         </Drawer>
       </>
