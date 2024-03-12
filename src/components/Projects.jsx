@@ -32,6 +32,11 @@ const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
   const [activeButton, setActiveButton] = useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { getDisclosureProps, getButtonProps } = useDisclosure();
+  // const buttonProps = getButtonProps();
+  // const disclosureProps = getDisclosureProps();
+  // const [selectedProject, setSelectedProject] = useState({});
+
   const btnRef = React.useRef();
   useEffect(() => {
     setFiltProject(getProjects());
@@ -46,6 +51,7 @@ const Projects = () => {
     // console.log(index);
     setActiveButton(index);
   }
+
   return (
     <Box h={"max-content"}>
       <Heading
@@ -124,19 +130,15 @@ const Projects = () => {
                   justifyContent={"space-between"}
                   cursor={"pointer"}
                 >
-                  <Box ref={btnRef} onClick={onOpen}>
-                    {type.title}{" "}
+                  <Box onClick={onOpen} ref={btnRef}>
+                    {type.title}
                   </Box>
-                  {/* <Button siz={"md"} bg={"none"}>
-                    {<ArrowForwardIcon />}
-                  </Button> */}
                 </Flex>
               </Box>
             ))}
         </SimpleGrid>
       </Center>
       <>
-        {" "}
         <Drawer
           isOpen={isOpen}
           placement="right"
@@ -146,14 +148,12 @@ const Projects = () => {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader>{}</DrawerHeader>
 
-            <DrawerBody>
-              {/* <Input placeholder="Type here..." /> */}
-            </DrawerBody>
+            <DrawerBody></DrawerBody>
 
             <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
+              <Button variant="outline" mr={3}>
                 Cancel
               </Button>
               <Button colorScheme="blue">Save</Button>
