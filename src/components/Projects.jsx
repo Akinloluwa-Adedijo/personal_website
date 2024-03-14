@@ -166,25 +166,45 @@ const Projects = () => {
                 </Heading>
                 <UnorderedList>
                   {selectedProject.p3 &&
-                    selectedProject.p3.map((name) => (
-                      <ListItem>{name}</ListItem>
+                    selectedProject.p3.map((name, index) => (
+                      <ListItem key={index}>{name}</ListItem>
                     ))}
                 </UnorderedList>
-                <Box>
-                  <Button
-                    mt={5}
-                    bg={useColorModeValue("primary.light", "primary.dark")}
-                    textColor={useColorModeValue("text.dark", "text.light")}
-                    _hover={{
-                      bg: useColorModeValue("accent.light", "accent.dark"),
-                    }}
-                    useref={
-                      selectedProject.details && selectedProject.details.link
-                    }
-                  >
-                    {selectedProject.details && selectedProject.details.title}
-                  </Button>
-                </Box>
+                <Stack spacing={5} direction={"row"}>
+                  {/* {selectedProject.details &&
+                    selectedProject.details.access.map((p, index) => (
+                      <Button
+                        mt={3}
+                        key={index}
+                        bg={useColorModeValue("primary.light", "primary.dark")}
+                        textColor={useColorModeValue("text.dark", "text.light")}
+                        _hover={{
+                          bg: useColorModeValue("accent.light", "accent.dark"),
+                        }}
+                      >
+                        {p.title}
+                      </Button>
+                    ))}{selectedProject.details && */}
+                  {selectedProject.details &&
+                    selectedProject.details.access.map((p, index) => (
+                      <Box
+                        as="a"
+                        px={2}
+                        py={1}
+                        rounded={"md"}
+                        href={p.link}
+                        mt={3}
+                        key={index}
+                        bg={useColorModeValue("primary.light", "primary.dark")}
+                        textColor={useColorModeValue("text.dark", "text.light")}
+                        _hover={{
+                          bg: useColorModeValue("accent.light", "accent.dark"),
+                        }}
+                      >
+                        {p.title}
+                      </Box>
+                    ))}
+                </Stack>
               </Box>
             </DrawerBody>
 

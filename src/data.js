@@ -28,10 +28,10 @@ export const projectsInfo = [
     details: {
       access: [
         {
-          title: "Access the Essential Services Website",
+          title: "Essential Services Website",
           link: "https://simonfraseru.maps.arcgis.com/apps/webappviewer/index.html?id=af7fd55c905a4a719292c820678cb1d7",
         },
-        { title: "Access the Essentuial Services Brochure", link: geog351pdf },
+        { title: "Essentuial Services Brochure", link: geog351pdf },
       ],
       additional_media: {
         images: [],
@@ -53,7 +53,7 @@ export const projectsInfo = [
     p3: ["Terrset 2020"],
     cover_image: [geog355_image],
     details: {
-      access: [{ title: "Access the full paper:", link: geog355pdf }],
+      access: [{ title: "Full Paper", link: geog355pdf }],
       additional_media: {
         images: [],
       },
@@ -74,7 +74,7 @@ export const projectsInfo = [
     details: {
       access: [
         {
-          title: "View the visualizations produced",
+          title: "Visualizations produced",
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu-5yhKEFxPfWy2CHssbM0CY",
         },
       ],
@@ -98,7 +98,7 @@ export const projectsInfo = [
     details: {
       access: [
         {
-          title: "Access the visualizations produced from this project",
+          title: "Visualizations produced",
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu9jWKP5kAFRW5_rgmUscMQp",
         },
       ],
@@ -122,7 +122,7 @@ export const projectsInfo = [
     cover_image: [geog451_image],
     details: {
       access: [
-        { title: "Full paper", link: geog451pdf },
+        { title: "Full Paper", link: geog451pdf },
         {
           title: "Visualizations",
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu9IOXPHg9RM_pd11vklP3l8",
