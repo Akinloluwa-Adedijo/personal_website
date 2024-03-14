@@ -24,7 +24,7 @@ export const projectsInfo = [
     p2: "This Webapp was made using ArcGIS Online which is a cloud based mapping platform for the creation of maps, analysis of data which can be shared to the public accessed from any device.",
     heading2: "Tools Used",
     p3: ["ArcGIS Online"],
-    project_details: {
+    details: {
       title: "Access the Essential Services Website and Brochure",
       link: "https://simonfraseru.maps.arcgis.com/apps/webappviewer/index.html?id=af7fd55c905a4a719292c820678cb1d7",
       document: geog351pdf,
@@ -46,7 +46,7 @@ export const projectsInfo = [
     p2: "My role in this project involved : data acquisition, transformation and performing the Multi Criteria Evaluation and Analysis. ",
     heading2: "Tools Used",
     p3: ["Terrset 2020"],
-    project_details: {
+    details: {
       title: "Access the full paper:",
       link: "",
       document: geog355pdf,
@@ -66,7 +66,7 @@ export const projectsInfo = [
     p2: "The vast presence of high-rise buildings in metro Vancouver is not something to be in awe of. With rising populations, increasing economic pressures and the high demand for sustainable practices (Koziatek et al., 2016) from urban cities and planners, high rise buildings are providing an avenue for urban cities and real estate developers to develop affordable housing whilst making a profit to potential buyers. Most of these high-rise buildings vary in height and most importantly style. But one of the most crucial factors I have always considered about these buildings is the feasibility of mass evacuations in such buildings because some have over thirty, even forty floors. How feasible are mass evacuations? How many routes for evacuations are possible? and how fast do people need to move, especially from the highest floors to the ground floors where the possible safe zone is located? ",
     heading2: "Tools & Languages Used",
     p3: ["Unity"],
-    project_details: {
+    details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
       document: "",
@@ -86,7 +86,7 @@ export const projectsInfo = [
     p2: "The problem is understanding the processes involved in a mass evacuation scenario of a high-rise building with over ten floors by adding query tools that allow users to run different simulations. Query tools such as blocking off stairwells to agents and changing the speed of the agents are some of the capabilities of this final project. By giving users the freedom to choose which query tools to activate and deactivate, they can run multiple simulations to assess the impact of the query tools selected. Users can also view the number of agents that have reached the evacuation spot.",
     heading2: "Tools & Languages Used",
     p3: ["Unity", "C#"],
-    project_details: {
+    details: {
       title: "Access the visualizations produced from this project",
       link: "put link to the youtube playlist showing all videos produced",
       document: "",
@@ -107,7 +107,7 @@ export const projectsInfo = [
     p2: "put my role in this project here",
     heading2: "Tools",
     p3: ["ArcGIS Pro"],
-    project_details: {
+    details: {
       title: "Access the full paper",
       link: "",
       document: [geog451pdf],
@@ -116,9 +116,4 @@ export const projectsInfo = [
       },
     },
   },
-  // {
-  //   id: 6,
-  //   title: "cs filler text",
-  //   category: "web_development",
-  // },
 ];

@@ -107,7 +107,7 @@ const Projects = () => {
                     h={"250px"}
                     maxH={"300px"}
                     w={"100%"}
-                    src={type.project_details.additional_media.images[0]}
+                    src={type.details.additional_media.images[0]}
                     objectFit={"cover"}
                   />
                 </Box>
@@ -170,6 +170,21 @@ const Projects = () => {
                       <ListItem>{name}</ListItem>
                     ))}
                 </UnorderedList>
+                <Box>
+                  <Button
+                    mt={5}
+                    bg={useColorModeValue("primary.light", "primary.dark")}
+                    textColor={useColorModeValue("text.dark", "text.light")}
+                    _hover={{
+                      bg: useColorModeValue("accent.light", "accent.dark"),
+                    }}
+                    useref={
+                      selectedProject.details && selectedProject.details.link
+                    }
+                  >
+                    {selectedProject.details && selectedProject.details.title}
+                  </Button>
+                </Box>
               </Box>
             </DrawerBody>
 
