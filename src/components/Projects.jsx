@@ -10,10 +10,13 @@ import {
   filter,
   SimpleGrid,
   Card,
+  Text,
   Stack,
   CardBody,
   CardFooter,
   Image,
+  UnorderedList,
+  ListItem,
   Drawer,
   DrawerOverlay,
   DrawerContent,
@@ -153,7 +156,22 @@ const Projects = () => {
               {selectedProject.title}
             </DrawerHeader>
 
-            <DrawerBody></DrawerBody>
+            <DrawerBody>
+              <Box spacing={10}>
+                <Heading fontSize={24}>{selectedProject.heading1}</Heading>
+                <Text mt={5}>{selectedProject.p1}</Text>
+                <Text mt={5}>{selectedProject.p2}</Text>
+                <Heading fontSize={24} mt={5}>
+                  {selectedProject.heading2}
+                </Heading>
+                <UnorderedList>
+                  {selectedProject.p3 &&
+                    selectedProject.p3.map((name) => (
+                      <ListItem>{name}</ListItem>
+                    ))}
+                </UnorderedList>
+              </Box>
+            </DrawerBody>
 
             <DrawerFooter></DrawerFooter>
           </DrawerContent>
