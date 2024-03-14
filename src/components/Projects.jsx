@@ -107,7 +107,7 @@ const Projects = () => {
                     h={"250px"}
                     maxH={"300px"}
                     w={"100%"}
-                    src={type.details.additional_media.images[0]}
+                    src={type.cover_image}
                     objectFit={"cover"}
                   />
                 </Box>
