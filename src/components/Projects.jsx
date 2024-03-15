@@ -171,20 +171,6 @@ const Projects = () => {
                     ))}
                 </UnorderedList>
                 <Stack spacing={5} direction={"row"}>
-                  {/* {selectedProject.details &&
-                    selectedProject.details.access.map((p, index) => (
-                      <Button
-                        mt={3}
-                        key={index}
-                        bg={useColorModeValue("primary.light", "primary.dark")}
-                        textColor={useColorModeValue("text.dark", "text.light")}
-                        _hover={{
-                          bg: useColorModeValue("accent.light", "accent.dark"),
-                        }}
-                      >
-                        {p.title}
-                      </Button>
-                    ))}{selectedProject.details && */}
                   {selectedProject.details &&
                     selectedProject.details.access.map((p, index) => (
                       <Box
