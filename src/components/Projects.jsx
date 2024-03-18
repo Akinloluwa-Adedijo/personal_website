@@ -26,6 +26,7 @@ import {
   DrawerCloseButton,
   DrawerBody,
   useDisclosure,
+  ScaleFade,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
@@ -56,6 +57,7 @@ const Projects = () => {
         as="h2"
         fontSize={{ base: "2xl", md: "4xl" }}
         color={useColorModeValue("primary.light", "primary.dark")}
+        mb={5}
       >
         Projects
       </Heading>
@@ -128,6 +130,7 @@ const Projects = () => {
                       onOpen();
                       setSelectedProject(type);
                     }}
+                    fontWeight={600}
                   >
                     {type.title}
                   </Box>
