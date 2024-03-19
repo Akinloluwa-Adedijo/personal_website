@@ -169,7 +169,7 @@ const Projects = () => {
                   {selectedProject.heading2}
                 </Heading>
                 <Heading fontSize={24} mt={5}>
-                  <Avatar
+                  {/* <Avatar
                     name={
                       selectedProject.collaborators &&
                       selectedProject.collaborators.name
@@ -178,7 +178,7 @@ const Projects = () => {
                       selectedProject.collaborators &&
                       selectedProject.collaborators.link
                     }
-                  />
+                  /> */}
                 </Heading>
                 <UnorderedList>
                   {selectedProject.p3 &&

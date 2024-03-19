@@ -33,9 +33,6 @@ export const projectsInfo = [
         },
         { title: "Essentuial Services Brochure", link: geog351pdf },
       ],
-      additional_media: {
-        images: [],
-      },
     },
   },
   {
@@ -54,9 +51,6 @@ export const projectsInfo = [
     cover_image: [geog355_image],
     details: {
       access: [{ title: "Full Paper", link: geog355pdf }],
-      additional_media: {
-        images: [],
-      },
     },
   },
   {
@@ -78,9 +72,6 @@ export const projectsInfo = [
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu-5yhKEFxPfWy2CHssbM0CY",
         },
       ],
-      additional_media: {
-        images: [],
-      },
     },
   },
   {
@@ -102,9 +93,6 @@ export const projectsInfo = [
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu9jWKP5kAFRW5_rgmUscMQp",
         },
       ],
-      additional_media: {
-        images: [],
-      },
     },
   },
   {
@@ -116,7 +104,7 @@ export const projectsInfo = [
       /*put kevin and jennifer emails here*/
     },
     p1: "This project uses Cellular Automata (CA) to build a model of wildfire propagation using data of wildfires in British Columbia (BC) for 2022. Our model is inspired by previous CA wildfire models, and incorporates data on fuel types, road infrastructure, and topography to make a probabilistic model of wildfire spread for given ignition points under simulated wind conditions. Our model also incorporates stochastic processes to represent wildfire spotting. The project demonstrates the ability of CA models to represent fire propagation as a macro-phenomenon emerging from local interactions. Models were run five times each to capture different outcomes given the stochastic and probabilistic transition rules. Results show that the model results in comparable size, shape, and boundaries of the recorded wildfire perimeters given the same ignition points, though each ignition point can result in vastly different model outcomes given stochastic processes. ",
-    p2: "put my role in this project here",
+    p2: "In this project, I was responsible for managing the database utilized for storing data. Additionally, my tasks involved employing ArcGIS tools to standardize all datasets to a consistent coordinate system while maintaining their spatial resolutions.",
     heading2: "Tools",
     p3: ["ArcGIS Pro"],
     cover_image: [geog451_image],
@@ -128,9 +116,6 @@ export const projectsInfo = [
           link: "https://www.youtube.com/playlist?list=PL-y_NV1YjCu9IOXPHg9RM_pd11vklP3l8",
         },
       ],
-      additional_media: {
-        images: [],
-      },
     },
   },
 ];
