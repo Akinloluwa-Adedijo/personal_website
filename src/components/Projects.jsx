@@ -196,6 +196,7 @@ const Projects = () => {
                         rounded={"md"}
                         href={p.link}
                         mt={3}
+                        target="_blank"
                         key={index}
                         bg={useColorModeValue("primary.light", "primary.dark")}
                         textColor={useColorModeValue("text.dark", "text.light")}
