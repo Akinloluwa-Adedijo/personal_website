@@ -7,6 +7,7 @@ import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Home />
       <Projects />
+      <Contact />
     </Box>
   );
 }
