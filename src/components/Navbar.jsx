@@ -24,7 +24,7 @@ const Links = [
 
 const NavigationLinks = (props) => {
   const { children, section } = props;
-  console.log(section);
+  // console.log(section);
 
   return (
     <Box
