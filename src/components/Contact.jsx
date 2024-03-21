@@ -20,7 +20,7 @@ import { IoLogoGithub, IoIosMail } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <Center>
+    <Center id="contact">
       <Box position="bottom">
         <Heading textColor={useColorModeValue("primary.light", "primary.dark")}>
           Get In Touch

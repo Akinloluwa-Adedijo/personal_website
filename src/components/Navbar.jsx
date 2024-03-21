@@ -24,7 +24,6 @@ const Links = [
 
 const NavigationLinks = (props) => {
   const { children, section } = props;
-  // console.log(section);
 
   return (
     <Box
@@ -50,7 +49,13 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box bg={useColorModeValue("background.light", "background.dark")} p={2}>
+    <Box
+      bg={useColorModeValue("background.light", "background.dark")}
+      p={2}
+      position={"sticky"}
+      top={"0px"}
+      w={"100vw"}
+    >
       <Flex h={16} alignItems="center" justifyContent={"space-between"}>
         <Box p={2}>
           <Image
