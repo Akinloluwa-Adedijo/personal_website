@@ -15,10 +15,16 @@ import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
 
-const Links = ["About Me", "Projects", "Graphic Design", "Contact"];
+const Links = [
+  { title: "About Me", name: "about" },
+  { title: "Projects", name: "projects" },
+  { title: "Graphic Design", name: "graphic_design" },
+  { title: "Contact", name: "contact" },
+];
 
 const NavigationLinks = (props) => {
-  const { children } = props;
+  const { children, section } = props;
+  console.log(section);
 
   return (
     <Box
@@ -26,7 +32,7 @@ const NavigationLinks = (props) => {
       px={2}
       py={1}
       rounded={"md"}
-      href={"#"}
+      href={`#${section}`}
       color={useColorModeValue("text.light", "text.dark")}
       _hover={{
         textDecoration: "none",
@@ -53,8 +59,11 @@ const Navbar = () => {
           />
         </Box>
         <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-          {Links.map((link) => (
-            <NavigationLinks key={link}>{link}</NavigationLinks>
+          {Links.map((link, index) => (
+            // console.log(index)
+            <NavigationLinks key={index} section={link.name}>
+              {link.title}
+            </NavigationLinks>
           ))}
         </HStack>
 
