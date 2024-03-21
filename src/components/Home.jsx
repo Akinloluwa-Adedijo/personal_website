@@ -123,8 +123,11 @@ const Home = () => {
             Experience
           </Heading>
           <Box textAlign={"left"} gap={10}>
-            <Text fontWeight={600}>
-              Data Analyst Internship @ App growth Network
+            <Text
+              fontWeight={600}
+              color={useColorModeValue("primary.light", "primary.dark")}
+            >
+              Data Analyst Internship @ App Growth Network
             </Text>
             <Text fontSize={"sm"}>January - May 2022</Text>
           </Box>
