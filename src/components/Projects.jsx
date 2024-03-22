@@ -52,7 +52,7 @@ const Projects = () => {
   }
 
   return (
-    <Box h={"max-content"} id="projects">
+    <Box h={"max-content"} id="projects" w={"100vw"}>
       <Heading
         as="h2"
         fontSize={{ base: "2xl", md: "4xl" }}
