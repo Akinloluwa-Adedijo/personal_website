@@ -91,8 +91,10 @@ const Navbar = () => {
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
-            {Links.map((link) => (
-              <NavigationLinks key={link}>{link}</NavigationLinks>
+            {Links.map((link, index) => (
+              <NavigationLinks key={index} section={link.name}>
+                {link.title}
+              </NavigationLinks>
             ))}
           </Stack>
         </Box>
