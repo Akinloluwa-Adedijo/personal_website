@@ -15,6 +15,7 @@ function App() {
     <Box
       textAlign="center"
       bg={useColorModeValue("background.light", "background.dark")}
+      w={"100vw"}
     >
       <Navbar />
       <Home />

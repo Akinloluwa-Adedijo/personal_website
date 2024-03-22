@@ -21,7 +21,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <Box id="about" w={"100vw"}>
+    <Box id="about">
       <Center>
         <Flex alignItems={"center"} minW={"300px"} p={10} gap={10}>
           <Box textAlign={"left"}>
