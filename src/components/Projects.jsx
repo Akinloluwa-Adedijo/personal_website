@@ -52,7 +52,7 @@ const Projects = () => {
   }
 
   return (
-    <Box h={"max-content"} id="projects">
+    <Box id="projects">
       <Heading
         as="h2"
         fontSize={{ base: "2xl", md: "4xl" }}
@@ -63,7 +63,7 @@ const Projects = () => {
       </Heading>
       <Center>
         <Flex>
-          <Flex direction={"row"} gap={10}>
+          <Flex direction={"row"} gap={10} mb={5}>
             {projectButtons &&
               projectButtons.map((type, index) => (
                 <Button
@@ -93,7 +93,7 @@ const Projects = () => {
         </Flex>
       </Center>
       <Center>
-        <SimpleGrid spacing={4} columns={[1, null, 2]} p={5}>
+        <SimpleGrid spacing={5} columns={[1, null, 2]} p={10}>
           {filtProject &&
             filtProject.map((type, index) => (
               <Box

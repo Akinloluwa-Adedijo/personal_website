@@ -13,21 +13,30 @@ import {
   Avatar,
   Text,
   Image,
+  Icon,
   UnorderedList,
   ListItem,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
+import { VscGithubAlt } from "react-icons/vsc";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 const Home = () => {
   return (
-    <Box id="about">
-      <Center>
-        <Flex alignItems={"center"} minW={"300px"} p={10} gap={10}>
+    <Box id="about" h={"100%"}>
+      <Center mt={10}>
+        <Flex
+          alignItems={"center"}
+          minW={"300px"}
+          w={"xl"}
+          p={10}
+          gap={50}
+          direction={{ base: "column", md: "row" }}
+        >
           <Box textAlign={"left"}>
             <Heading
-              as="h2"
-              fontSize={{ base: "2xl", md: "4xl" }}
+              fontSize={{ base: "3xl", md: "5xl" }}
               color={useColorModeValue("primary.light", "primary.dark")}
             >
               Akinloluwa Adedijo
@@ -43,14 +52,50 @@ const Home = () => {
                 loop: true,
               }}
             />
+            <Flex direction="row" gap={25} mt={2} alignContent={"center"}>
+              <Box
+                as="a"
+                href="https://github.com/Akinloluwa-Adedijo"
+                target="_blank"
+              >
+                <Icon
+                  as={VscGithubAlt}
+                  // boxSize={{ base: 25, md: 50 }}
+                  boxSize={30}
+                  color={useColorModeValue("primary.light", "primary.dark")}
+                  _hover={{
+                    color: useColorModeValue("accent.light", "accent.dark"),
+                    cursor: "pointer",
+                  }}
+                />
+              </Box>
+
+              <Box
+                as="a"
+                href="https://www.linkedin.com/in/akinloluwa-adedijo-a362b2177/"
+                target="_blank"
+              >
+                <Icon
+                  as={SlSocialLinkedin}
+                  // boxSize={{ base: 30, md: 50 }}
+                  boxSize={30}
+                  color={useColorModeValue("primary.light", "primary.dark")}
+                  _hover={{
+                    color: useColorModeValue("accent.light", "accent.dark"),
+                    cursor: "pointer",
+                  }}
+                />
+              </Box>
+            </Flex>
           </Box>
           <Avatar
             name="Akinloluwa Adedijo"
             bg={useColorModeValue("primary.light", "primary.dark")}
-            size="lg"
+            size="2xl"
           />
         </Flex>
       </Center>
+
       <Center bg={useColorModeValue("background.light", "background.dark")}>
         <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={10} p={10}>
           <Heading
@@ -77,6 +122,7 @@ const Home = () => {
             as={"h3"}
             fontSize={{ base: "2xl", md: "4xl" }}
             color={useColorModeValue("primary.light", "primary.dark")}
+            mt={10}
             mb={2}
           >
             Tech Stack
@@ -118,7 +164,7 @@ const Home = () => {
             fontSize={{ base: "2xl", md: "4xl" }}
             color={useColorModeValue("primary.light", "primary.dark")}
             mb={2}
-            mt={2}
+            mt={10}
           >
             Experience
           </Heading>

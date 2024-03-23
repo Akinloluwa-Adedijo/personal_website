@@ -52,7 +52,7 @@ const Navbar = () => {
     <Box
       bg={useColorModeValue("background.light", "background.dark")}
       p={2}
-      position={"sticky"}
+      // position={"sticky"}
       top={"0px"}
       w={"100vw"}
     >
@@ -89,7 +89,7 @@ const Navbar = () => {
       </Flex>
 
       {isOpen ? (
-        <Box pb={4} display={{ md: "none" }}>
+        <Box display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
             {Links.map((link, index) => (
               <NavigationLinks key={index} section={link.name}>

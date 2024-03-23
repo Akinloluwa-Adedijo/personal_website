@@ -20,9 +20,12 @@ import { IoLogoGithub, IoIosMail } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <Center id="contact">
+    <Center id="contact" mt={50} h={"50vh"}>
       <Box position="bottom">
-        <Heading textColor={useColorModeValue("primary.light", "primary.dark")}>
+        <Heading
+          textColor={useColorModeValue("primary.light", "primary.dark")}
+          mb={5}
+        >
           Get In Touch
         </Heading>
         <Flex w={{ base: "xs", md: "md" }}>
@@ -42,7 +45,11 @@ const Contact = () => {
             />
           </Box>
           <Spacer />
-          <Box as="a" href="https://github.com/Akinloluwa-Adedijo">
+          <Box
+            as="a"
+            href="https://github.com/Akinloluwa-Adedijo"
+            target="_blank"
+          >
             <Icon
               as={IoLogoGithub}
               boxSize={{ base: 50, md: 75 }}
@@ -57,6 +64,7 @@ const Contact = () => {
           <Box
             as="a"
             href="https://www.linkedin.com/in/akinloluwa-adedijo-a362b2177/"
+            target="_blank"
           >
             <Icon
               as={FaLinkedin}
@@ -70,7 +78,11 @@ const Contact = () => {
           </Box>
 
           <Spacer />
-          <Box as="a" href="https://www.behance.net/akinloluwa_adedijo">
+          <Box
+            as="a"
+            href="https://www.behance.net/akinloluwa_adedijo"
+            target="_blank"
+          >
             <Icon
               as={FaBehance}
               boxSize={{ base: 50, md: 75 }}
