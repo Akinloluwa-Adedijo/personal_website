@@ -93,7 +93,7 @@ const Projects = () => {
         </Flex>
       </Center>
       <Center>
-        <SimpleGrid spacing={5} columns={[1, null, 2]} p={10}>
+        <SimpleGrid spacing={5} columns={[1, null, 2]} p={5}>
           {filtProject &&
             filtProject.map((type, index) => (
               <Box
