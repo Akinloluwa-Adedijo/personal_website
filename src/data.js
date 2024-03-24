@@ -1,8 +1,6 @@
-const geog351pdf = "../src/assets/GEOG351_Mini_Project_Brochure.pdf";
-// const geog355pdf = "../src/assets/geog355.pdf";
+import geog351pdf from "../src/assets/GEOG351_Mini_Project_Brochure.pdf";
 import geog355pdf from "../src/assets/geog355.pdf";
-const geog451pdf =
-  "../src/assets/geog451_final_proj_adedijo_matheson_pegram.pdf";
+import geog451pdf from "../src/assets/geog451_final_proj_adedijo_matheson_pegram.pdf";
 import geog351_image from "../src/assets/geog351_mini_proj_screenshot.png";
 import geog355_image from "../src/assets/geog355_screenshot.png";
 import geog356_image from "../src/assets/geog356_screenshot.png";
