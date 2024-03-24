@@ -26,10 +26,10 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.5699011"
      inkscape:cx="207.93081"
-     inkscape:cy="130.72444"
-     inkscape:window-width="1366"
-     inkscape:window-height="695"
-     inkscape:window-x="0"
+     inkscape:cy="132.47913"
+     inkscape:window-width="2560"
+     inkscape:window-height="1411"
+     inkscape:window-x="1366"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer-MC4">
@@ -50,17 +50,17 @@
     <path
        id="path99"
        d="M 0,0 -82.441,83.393 Z M -82.441,110.302 0,193.937 Z M -50.514,96.969 44.794,0 H 0 L -82.441,83.393 -95.784,96.727 -82.441,110.302 0,193.937 h 44.794 z"
-       style="fill:#8fb3ff;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
+       style="fill:#c1b4ae;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,7843.3281,774.58333)" />
     <path
        id="path100"
        d="m 0,0 -24.81,-24.81 -32.45,64.75 -29.059,-57.87 -16.25,-32.5 -16.75,-33 h -36.441 l 98.5,197 z"
-       style="fill:#8fb3ff;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
+       style="fill:#c1b4ae;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,7696.6263,663.42707)" />
     <path
        id="path101"
        d="m 0,0 -37,-1 -14.02,27.98 24.871,24.87 z"
-       style="fill:#8fb3ff;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
+       style="fill:#c1b4ae;fill-opacity:0.99215686;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,7752.0533,773.33333)" />
   </g>
 </svg>
