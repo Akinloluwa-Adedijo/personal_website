@@ -1,5 +1,6 @@
 const geog351pdf = "../src/assets/GEOG351_Mini_Project_Brochure.pdf";
-const geog355pdf = "../src/assets/geog355.pdf";
+// const geog355pdf = "../src/assets/geog355.pdf";
+import geog355pdf from "../src/assets/geog355.pdf";
 const geog451pdf =
   "../src/assets/geog451_final_proj_adedijo_matheson_pegram.pdf";
 import geog351_image from "../src/assets/geog351_mini_proj_screenshot.png";
