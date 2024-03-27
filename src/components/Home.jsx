@@ -60,7 +60,6 @@ const Home = () => {
               >
                 <Icon
                   as={VscGithubAlt}
-                  // boxSize={{ base: 25, md: 50 }}
                   boxSize={30}
                   color={useColorModeValue("primary.light", "primary.dark")}
                   _hover={{
@@ -77,7 +76,6 @@ const Home = () => {
               >
                 <Icon
                   as={SlSocialLinkedin}
-                  // boxSize={{ base: 30, md: 50 }}
                   boxSize={30}
                   color={useColorModeValue("primary.light", "primary.dark")}
                   _hover={{

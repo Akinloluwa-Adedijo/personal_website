@@ -112,6 +112,7 @@ const Projects = () => {
                     w={"100%"}
                     src={type.cover_image}
                     objectFit={"cover"}
+                    alt="Project Thumbnail"
                   />
                 </Box>
                 <Flex
