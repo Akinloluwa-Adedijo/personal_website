@@ -1,18 +1,11 @@
 import React from "react";
 import {
   Box,
-  Button,
-  Highlight,
-  Stack,
-  VStack,
-  HStack,
   Heading,
   Center,
-  Spacer,
   Flex,
   Avatar,
   Text,
-  Image,
   Icon,
   UnorderedList,
   ListItem,

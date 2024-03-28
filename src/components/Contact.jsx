@@ -4,18 +4,12 @@ import {
   Center,
   Flex,
   Heading,
-  HStack,
   Icon,
   Spacer,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
-import {
-  FaLinkedin,
-  FaBehanceSquare,
-  FaBehance,
-  FaInstagramSquare,
-} from "react-icons/fa";
+import { FaLinkedin, FaBehance } from "react-icons/fa";
 import { IoLogoGithub, IoIosMail } from "react-icons/io";
 
 const Contact = () => {

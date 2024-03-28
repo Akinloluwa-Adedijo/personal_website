@@ -5,19 +5,13 @@ import {
   Center,
   Heading,
   Flex,
-  Spacer,
   useColorModeValue,
-  filter,
   SimpleGrid,
-  Card,
   Text,
   Stack,
-  CardBody,
-  CardFooter,
   Image,
   UnorderedList,
   ListItem,
-  Avatar,
   Drawer,
   DrawerOverlay,
   DrawerContent,
@@ -26,12 +20,11 @@ import {
   DrawerCloseButton,
   DrawerBody,
   useDisclosure,
-  ScaleFade,
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
+// import { ArrowForwardIcon } from "@chakra-ui/icons";
+// import { motion } from "framer-motion";
 
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
