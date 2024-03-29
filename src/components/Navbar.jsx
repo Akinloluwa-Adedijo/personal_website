@@ -52,9 +52,10 @@ const Navbar = () => {
     <Box
       bg={useColorModeValue("background.light", "background.dark")}
       p={2}
-      // position={"sticky"}
+      position={"sticky"}
       top={"0px"}
       w={"100vw"}
+      boxShadow="lg"
     >
       <Flex h={16} alignItems="center" justifyContent={"space-between"}>
         <Box p={2}>
@@ -65,7 +66,6 @@ const Navbar = () => {
         </Box>
         <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
           {Links.map((link, index) => (
-            // console.log(index)
             <NavigationLinks key={index} section={link.name}>
               {link.title}
             </NavigationLinks>
