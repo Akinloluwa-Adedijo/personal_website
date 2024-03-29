@@ -162,18 +162,7 @@ const Projects = () => {
                 <Heading fontSize={24} mt={5}>
                   {selectedProject.heading2}
                 </Heading>
-                <Heading fontSize={24} mt={5}>
-                  {/* <Avatar
-                    name={
-                      selectedProject.collaborators &&
-                      selectedProject.collaborators.name
-                    }
-                    src={
-                      selectedProject.collaborators &&
-                      selectedProject.collaborators.link
-                    }
-                  /> */}
-                </Heading>
+                <Heading fontSize={24} mt={5}></Heading>
                 <UnorderedList>
                   {selectedProject.p3 &&
                     selectedProject.p3.map((name, index) => (
