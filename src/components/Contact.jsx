@@ -25,7 +25,7 @@ const Contact = () => {
         <Flex w={{ base: "xs", md: "md" }}>
           <Box
             as="a"
-            href="mailto:akinloluwa2345@gmail.com?subject=Reaching%20Out%20After%20Viewing%20Your%20Website&body=Hey%2C%20My%20name%20is%20"
+            href="mailto:adedijoakinloluwa@gmail.com?subject=Reaching%20Out%20After%20Viewing%20Your%20Website&body=Hey%2C%20My%20name%20is%20"
             target="_blank"
           >
             <Icon
