@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
+import SectionHeading from "./SectionHeading";
 // import { ArrowForwardIcon } from "@chakra-ui/icons";
 // import { motion } from "framer-motion";
 
@@ -46,14 +47,7 @@ const Projects = () => {
 
   return (
     <Box id="projects">
-      <Heading
-        as="h2"
-        fontSize={{ base: "2xl", md: "4xl" }}
-        color={useColorModeValue("primary.light", "primary.dark")}
-        mb={5}
-      >
-        Projects
-      </Heading>
+      <SectionHeading title="Projects" />
       <Center>
         <Flex>
           <Flex direction={"row"} gap={10} mb={5}>

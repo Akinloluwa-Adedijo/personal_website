@@ -14,7 +14,7 @@ import {
 import Typewriter from "typewriter-effect";
 import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialLinkedin } from "react-icons/sl";
-
+import SectionHeading from "./SectionHeading";
 const Home = () => {
   return (
     <Box id="about" h={"100%"}>
@@ -90,14 +90,7 @@ const Home = () => {
 
       <Center bg={useColorModeValue("background.light", "background.dark")}>
         <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={10} p={10}>
-          <Heading
-            as={"h3"}
-            fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("primary.light", "primary.dark")}
-            mb={2}
-          >
-            About Me
-          </Heading>
+          <SectionHeading title="About Me" />
           <Text fontSize={{ base: "sm", md: "md" }} textAlign={"left"}>
             Hey, Welcome to my small corner of the internet where I unveil a bit
             about myself, projects and things i find interesting. First a bit
@@ -110,15 +103,7 @@ const Home = () => {
             classes and projects, all of which have contributed to my growth and
             development. <br />
           </Text>
-          <Heading
-            as={"h3"}
-            fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("primary.light", "primary.dark")}
-            mt={10}
-            mb={2}
-          >
-            Tech Stack
-          </Heading>
+          <SectionHeading title="Tech Stack" />
           <UnorderedList textAlign={"left"}>
             <ListItem>
               <Text
@@ -151,15 +136,7 @@ const Home = () => {
               Figma, Adobe Illustrator, Adobe Photoshop, GIMP, InkScape
             </ListItem>
           </UnorderedList>
-          <Heading
-            as={"h3"}
-            fontSize={{ base: "2xl", md: "4xl" }}
-            color={useColorModeValue("primary.light", "primary.dark")}
-            mb={2}
-            mt={10}
-          >
-            Experience
-          </Heading>
+          <SectionHeading title="Experience" />
           <Box textAlign={"left"} gap={10}>
             <Text
               fontWeight={600}

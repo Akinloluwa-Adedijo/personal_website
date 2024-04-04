@@ -11,17 +11,13 @@ import {
 import { EmailIcon } from "@chakra-ui/icons";
 import { FaLinkedin, FaBehance } from "react-icons/fa";
 import { IoLogoGithub, IoIosMail } from "react-icons/io";
+import SectionHeading from "./SectionHeading";
 
 const Contact = () => {
   return (
     <Center id="contact" mt={50} h={"50vh"}>
       <Box position="bottom">
-        <Heading
-          textColor={useColorModeValue("primary.light", "primary.dark")}
-          mb={5}
-        >
-          Get In Touch
-        </Heading>
+        <SectionHeading title="Get In Touch" />
         <Flex w={{ base: "xs", md: "md" }}>
           <Box
             as="a"
