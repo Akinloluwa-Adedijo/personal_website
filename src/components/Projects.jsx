@@ -24,8 +24,6 @@ import {
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
 import SectionHeading from "./SectionHeading";
-// import { ArrowForwardIcon } from "@chakra-ui/icons";
-// import { motion } from "framer-motion";
 
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
@@ -166,23 +164,32 @@ const Projects = () => {
                 <Stack spacing={5} direction={"row"}>
                   {selectedProject.details &&
                     selectedProject.details.access.map((p, index) => (
-                      <Box
-                        as="a"
-                        px={2}
-                        py={1}
-                        rounded={"md"}
-                        href={p.link}
-                        mt={3}
-                        target="_blank"
-                        key={index}
-                        bg={useColorModeValue("primary.light", "primary.dark")}
-                        textColor={useColorModeValue("text.dark", "text.light")}
-                        _hover={{
-                          bg: useColorModeValue("accent.light", "accent.dark"),
-                        }}
-                      >
-                        {p.title}
-                      </Box>
+                      <a href={p.link}>
+                        <Button
+                          px={2}
+                          py={1}
+                          rounded={"md"}
+                          mt={3}
+                          target="_blank"
+                          key={index}
+                          bg={useColorModeValue(
+                            "primary.light",
+                            "primary.dark"
+                          )}
+                          textColor={useColorModeValue(
+                            "text.dark",
+                            "text.light"
+                          )}
+                          _hover={{
+                            bg: useColorModeValue(
+                              "accent.light",
+                              "accent.dark"
+                            ),
+                          }}
+                        >
+                          {p.title}
+                        </Button>
+                      </a>
                     ))}
                 </Stack>
               </Box>

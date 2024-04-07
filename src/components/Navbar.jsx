@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -14,6 +14,8 @@ import {
 import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
+import { motion } from "framer-motion";
+import LinkButtons from "./NavButtons";
 
 const Links = [
   { title: "About Me", name: "about" },
@@ -21,29 +23,6 @@ const Links = [
   { title: "Graphic Design", name: "graphic_design" },
   { title: "Contact", name: "contact" },
 ];
-
-const NavigationLinks = (props) => {
-  const { children, section } = props;
-
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={"md"}
-      href={`#${section}`}
-      color={useColorModeValue("text.light", "text.dark")}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("primary.light", "primary.dark"),
-        color: useColorModeValue("text.dark", "text.light"),
-      }}
-      fontSize={"lg"}
-    >
-      {children}
-    </Box>
-  );
-};
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -64,11 +43,9 @@ const Navbar = () => {
             src={colorMode === "light" ? LogoLight : LogoDark}
           />
         </Box>
-        <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
+        <HStack as={"nav"} spacing={10} display={{ base: "none", md: "flex" }}>
           {Links.map((link, index) => (
-            <NavigationLinks key={index} section={link.name}>
-              {link.title}
-            </NavigationLinks>
+            <LinkButtons key={index} title={link.title} section={link.name} />
           ))}
         </HStack>
 
