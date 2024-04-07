@@ -15,6 +15,7 @@ import Typewriter from "typewriter-effect";
 import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialLinkedin } from "react-icons/sl";
 import SectionHeading from "./SectionHeading";
+
 const Home = () => {
   return (
     <Box id="about" h={"100%"}>
