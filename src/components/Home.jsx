@@ -23,7 +23,6 @@ const Home = () => {
         <Flex
           alignItems={"center"}
           minW={"300px"}
-          // w={"xl"}
           w={{ base: "md", md: "2xl" }}
           p={10}
           gap={50}
