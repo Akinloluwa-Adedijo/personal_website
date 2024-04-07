@@ -164,13 +164,12 @@ const Projects = () => {
                 <Stack spacing={5} direction={"row"}>
                   {selectedProject.details &&
                     selectedProject.details.access.map((p, index) => (
-                      <a href={p.link}>
+                      <a href={p.link} target="_blank">
                         <Button
                           px={2}
                           py={1}
                           rounded={"md"}
                           mt={3}
-                          target="_blank"
                           key={index}
                           bg={useColorModeValue(
                             "primary.light",
