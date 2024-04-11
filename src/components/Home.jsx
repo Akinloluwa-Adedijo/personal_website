@@ -15,6 +15,12 @@ import Typewriter from "typewriter-effect";
 import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialLinkedin } from "react-icons/sl";
 import SectionHeading from "./SectionHeading";
+import { motion } from "framer-motion";
+
+const textVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 const Home = () => {
   return (
@@ -91,18 +97,25 @@ const Home = () => {
       <Center bg={useColorModeValue("background.light", "background.dark")}>
         <Box h={"max-content"} w={{ base: "md", md: "2xl" }} mt={10} p={10}>
           <SectionHeading title="About Me" />
-          <Text fontSize={{ base: "sm", md: "md" }} textAlign={"left"}>
-            Hey, Welcome to my small corner of the internet where I unveil a bit
-            about myself, projects and things i find interesting. First a bit
-            about me. I'm about to be a graduate of the GIS program at Simon
-            Fraser University (My Convocation Ceremony is in June and I'm pretty
-            excited) The GIS degree is a collaboration between the Department of
-            Computer Science and Geography, allowing me to experience an unique
-            avenue to combine knowledge from both disciplines. Throughout my
-            time at SFU, I've had the opportunity to explore a diverse range of
-            classes and projects, all of which have contributed to my growth and
-            development. <br />
-          </Text>
+          <motion.p
+            initial="hidden"
+            variants={textVariants}
+            animate="visible"
+            transition={{ delay: 0.5 }}
+          >
+            <Text textAlign={"left"}>
+              Hey, Welcome to my small corner of the internet where I unveil a
+              bit about myself, projects and things i find interesting. First a
+              bit about me. I'm about to be a graduate of the GIS program at
+              Simon Fraser University (My Convocation Ceremony is in June and
+              I'm pretty excited) The GIS degree is a collaboration between the
+              Department of Computer Science and Geography, allowing me to
+              experience an unique avenue to combine knowledge from both
+              disciplines. Throughout my time at SFU, I've had the opportunity
+              to explore a diverse range of classes and projects, all of which
+              have contributed to my growth and development.
+            </Text>
+          </motion.p>
           <SectionHeading title="Tech Stack" />
           <UnorderedList textAlign={"left"}>
             <ListItem>
