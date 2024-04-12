@@ -9,19 +9,22 @@ const headingVariants = {
 const SectionHeading = (props) => {
   const { title } = props;
   return (
-    <Heading
+    <motion.div
       as={motion.h1}
       initial="hidden"
       variants={headingVariants}
       animate="visible"
       transition={{ delay: 0.5 }}
-      fontSize={{ base: "2xl", md: "4xl" }}
-      color={useColorModeValue("primary.light", "primary.dark")}
-      mb={2}
-      mt={10}
     >
-      {title}
-    </Heading>
+      <Heading
+        fontSize={{ base: "2xl", md: "4xl" }}
+        color={useColorModeValue("primary.light", "primary.dark")}
+        mb={5}
+        mt={10}
+      >
+        {title}
+      </Heading>
+    </motion.div>
   );
 };
 

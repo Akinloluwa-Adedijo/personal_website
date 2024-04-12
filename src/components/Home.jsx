@@ -116,47 +116,62 @@ const Home = () => {
             development.
           </motion.p>
           <SectionHeading title="Tech Stack" />
-          <UnorderedList textAlign={"left"}>
-            <ListItem>
-              <Text
-                as={"span"}
-                fontWeight={600}
-                color={useColorModeValue("primary.light", "primary.dark")}
-              >
-                Programming Languages:
-              </Text>{" "}
-              Html, CSS, Javascript, React, SQL, Python
-            </ListItem>
-            <ListItem>
-              <Text
-                as={"span"}
-                fontWeight={600}
-                color={useColorModeValue("primary.light", "primary.dark")}
-              >
-                GIS Tools:
-              </Text>{" "}
-              ArcGIS Pro, ArcGIS Online, QGIS, Google Earth Pro
-            </ListItem>
-            <ListItem>
-              <Text
-                as={"span"}
-                fontWeight={600}
-                color={useColorModeValue("primary.light", "primary.dark")}
-              >
-                Design:
-              </Text>
-              Figma, Adobe Illustrator, Adobe Photoshop, GIMP, InkScape
-            </ListItem>
-          </UnorderedList>
+          <motion.div
+            initial="hidden"
+            variants={textVariants}
+            animate="visible"
+            transition={{ delay: 0.5 }}
+          >
+            <UnorderedList textAlign={"left"}>
+              <ListItem>
+                <Text
+                  as={"span"}
+                  fontWeight={600}
+                  color={useColorModeValue("primary.light", "primary.dark")}
+                >
+                  Programming Languages:
+                </Text>{" "}
+                Html, CSS, Javascript, React, SQL, Python
+              </ListItem>
+              <ListItem>
+                <Text
+                  as={"span"}
+                  fontWeight={600}
+                  color={useColorModeValue("primary.light", "primary.dark")}
+                >
+                  GIS Tools:
+                </Text>{" "}
+                ArcGIS Pro, ArcGIS Online, QGIS, Google Earth Pro
+              </ListItem>
+              <ListItem>
+                <Text
+                  as={"span"}
+                  fontWeight={600}
+                  color={useColorModeValue("primary.light", "primary.dark")}
+                >
+                  Design:
+                </Text>
+                Figma, Adobe Illustrator, Adobe Photoshop, GIMP, InkScape
+              </ListItem>
+            </UnorderedList>
+          </motion.div>
+
           <SectionHeading title="Experience" />
           <Box textAlign={"left"} gap={10}>
-            <Text
-              fontWeight={600}
-              color={useColorModeValue("primary.light", "primary.dark")}
+            <motion.div
+              initial="hidden"
+              variants={textVariants}
+              animate="visible"
+              transition={{ delay: 0.5 }}
             >
-              Data Analyst Internship @ App Growth Network
-            </Text>
-            <Text fontSize={"sm"}>January - May 2022</Text>
+              <Text
+                fontWeight={600}
+                color={useColorModeValue("primary.light", "primary.dark")}
+              >
+                Data Analyst Internship @ App Growth Network
+              </Text>
+              <Text fontSize={"sm"}>January - May 2022</Text>
+            </motion.div>
           </Box>
         </Box>
       </Center>
