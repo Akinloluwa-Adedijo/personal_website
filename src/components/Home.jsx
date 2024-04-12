@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Box,
   Heading,
@@ -102,19 +102,18 @@ const Home = () => {
             variants={textVariants}
             animate="visible"
             transition={{ delay: 0.5 }}
+            style={{ textAlign: "left" }}
           >
-            <Text textAlign={"left"}>
-              Hey, Welcome to my small corner of the internet where I unveil a
-              bit about myself, projects and things i find interesting. First a
-              bit about me. I'm about to be a graduate of the GIS program at
-              Simon Fraser University (My Convocation Ceremony is in June and
-              I'm pretty excited) The GIS degree is a collaboration between the
-              Department of Computer Science and Geography, allowing me to
-              experience an unique avenue to combine knowledge from both
-              disciplines. Throughout my time at SFU, I've had the opportunity
-              to explore a diverse range of classes and projects, all of which
-              have contributed to my growth and development.
-            </Text>
+            Hey, Welcome to my small corner of the internet where I unveil a bit
+            about myself, projects and things i find interesting. First a bit
+            about me. I'm about to be a graduate of the GIS program at Simon
+            Fraser University (My Convocation Ceremony is in June and I'm pretty
+            excited) The GIS degree is a collaboration between the Department of
+            Computer Science and Geography, allowing me to experience an unique
+            avenue to combine knowledge from both disciplines. Throughout my
+            time at SFU, I've had the opportunity to explore a diverse range of
+            classes and projects, all of which have contributed to my growth and
+            development.
           </motion.p>
           <SectionHeading title="Tech Stack" />
           <UnorderedList textAlign={"left"}>
