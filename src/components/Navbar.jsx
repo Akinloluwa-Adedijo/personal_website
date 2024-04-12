@@ -59,7 +59,16 @@ const Navbar = () => {
             alignContent={"right"}
           />
 
-          <Button onClick={toggleColorMode} siz={"md"} bg={"none"}>
+          <Button
+            onClick={toggleColorMode}
+            siz={"md"}
+            bg={useColorModeValue("background.light", "background.dark")}
+            color={useColorModeValue("primary.light", "primary.dark")}
+            _hover={{
+              bg: useColorModeValue("background.dark", "background.light"),
+              color: useColorModeValue("primary.dark", "primary.light"),
+            }}
+          >
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>
         </HStack>
