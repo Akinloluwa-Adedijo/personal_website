@@ -15,7 +15,7 @@ import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
 import { motion } from "framer-motion";
-import LinkButtons from "./NavButtons";
+import NavButtons from "./NavButtons";
 
 const Links = [
   { title: "About Me", name: "about" },
@@ -45,7 +45,7 @@ const Navbar = () => {
         </Box>
         <HStack as={"nav"} spacing={10} display={{ base: "none", md: "flex" }}>
           {Links.map((link, index) => (
-            <LinkButtons key={index} title={link.title} section={link.name} />
+            <NavButtons key={index} title={link.title} section={link.name} />
           ))}
         </HStack>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
         <Box display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
             {Links.map((link, index) => (
-              <LinkButtons key={index} title={link.title} section={link.name} />
+              <NavButtons key={index} title={link.title} section={link.name} />
             ))}
           </Stack>
         </Box>
