@@ -69,9 +69,7 @@ const Navbar = () => {
         <Box display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
             {Links.map((link, index) => (
-              <NavigationLinks key={index} section={link.name}>
-                {link.title}
-              </NavigationLinks>
+              <LinkButtons key={index} title={link.title} section={link.name} />
             ))}
           </Stack>
         </Box>
