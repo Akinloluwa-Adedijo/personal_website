@@ -16,6 +16,7 @@ import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
 import { motion } from "framer-motion";
 import NavButtons from "./NavButtons";
+import { opacityVariants } from "./Home";
 
 const Links = [
   { title: "About Me", name: "about" },
@@ -36,43 +37,54 @@ const Navbar = () => {
       w={"100vw"}
       boxShadow="lg"
     >
-      <Flex h={16} alignItems="center" justifyContent={"space-between"}>
-        <Box p={2}>
-          <Image
-            boxSize={16}
-            src={colorMode === "light" ? LogoLight : LogoDark}
-          />
-        </Box>
-        <HStack as={"nav"} spacing={10} display={{ base: "none", md: "flex" }}>
-          {Links.map((link, index) => (
-            <NavButtons key={index} title={link.title} section={link.name} />
-          ))}
-        </HStack>
-
-        <HStack>
-          <IconButton
-            size={"md"}
-            bg={"none"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-            alignContent={"right"}
-          />
-
-          <Button
-            onClick={toggleColorMode}
-            siz={"md"}
-            bg={useColorModeValue("background.light", "background.dark")}
-            color={useColorModeValue("primary.light", "primary.dark")}
-            _hover={{
-              bg: useColorModeValue("background.dark", "background.light"),
-              color: useColorModeValue("primary.dark", "primary.light"),
-            }}
+      <motion.div
+        initial="hidden"
+        variants={opacityVariants}
+        animate="visible"
+        transition={{ delay: 0.25 }}
+      >
+        <Flex h={16} alignItems="center" justifyContent={"space-between"}>
+          <Box p={2}>
+            <Image
+              boxSize={16}
+              src={colorMode === "light" ? LogoLight : LogoDark}
+            />
+          </Box>
+          <HStack
+            as={"nav"}
+            spacing={10}
+            display={{ base: "none", md: "flex" }}
           >
-            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>
-        </HStack>
-      </Flex>
+            {Links.map((link, index) => (
+              <NavButtons key={index} title={link.title} section={link.name} />
+            ))}
+          </HStack>
+
+          <HStack>
+            <IconButton
+              size={"md"}
+              bg={"none"}
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              display={{ md: "none" }}
+              onClick={isOpen ? onClose : onOpen}
+              alignContent={"right"}
+            />
+
+            <Button
+              onClick={toggleColorMode}
+              siz={"md"}
+              bg={useColorModeValue("background.light", "background.dark")}
+              color={useColorModeValue("primary.light", "primary.dark")}
+              _hover={{
+                bg: useColorModeValue("background.dark", "background.light"),
+                color: useColorModeValue("primary.dark", "primary.light"),
+              }}
+            >
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </HStack>
+        </Flex>
+      </motion.div>
 
       {isOpen ? (
         <Box display={{ md: "none" }}>
