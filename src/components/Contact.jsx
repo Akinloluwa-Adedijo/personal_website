@@ -7,9 +7,15 @@ import {
   Spacer,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+// Icon Imports from react-icons
 import { FaLinkedin, FaBehance } from "react-icons/fa";
 import { IoLogoGithub, IoIosMail } from "react-icons/io";
+
+// Component Import
 import SectionHeading from "./SectionHeading";
+
+// Framer Motion and Section Varint Imports
 import { motion } from "framer-motion";
 import { opacityVariants } from "./Home";
 const Contact = () => {

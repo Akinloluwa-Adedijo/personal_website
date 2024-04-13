@@ -1,4 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+// react Imports
+import React, { useEffect, useState } from "react";
+
+// Chakra UI Imports
 import {
   Box,
   Button,
@@ -21,11 +24,18 @@ import {
   DrawerBody,
   useDisclosure,
 } from "@chakra-ui/react";
+
+// Project Object helper functions
 import { projectButtons } from "../data";
 import { getProjects, filterProject } from "../data_service";
+
+// Component Import
 import SectionHeading from "./SectionHeading";
+
+// Framer Motion and Section Varint Imports
 import { motion } from "framer-motion";
 import { opacityVariants } from "./Home";
+
 const Projects = () => {
   const [filtProject, setFiltProject] = useState(null);
   const [activeButton, setActiveButton] = useState(0);

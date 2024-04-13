@@ -1,4 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+
+// Chakra Imports
 import {
   Box,
   Heading,
@@ -11,12 +13,21 @@ import {
   ListItem,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Typewriter from "typewriter-effect";
+
+// Icon Imports from react-icons
 import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialLinkedin } from "react-icons/sl";
+
+// Typewriter Effect Import from typewriter-effect
+import Typewriter from "typewriter-effect";
+
+// Component Import
 import SectionHeading from "./SectionHeading";
+
+// Framer Motion Import
 import { motion } from "framer-motion";
 
+// Opacity Variants for animated sections on load
 export const opacityVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },

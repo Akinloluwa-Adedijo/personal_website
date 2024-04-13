@@ -1,4 +1,6 @@
 import React from "react";
+
+// Chakra UI Imports
 import {
   Box,
   Flex,
@@ -11,11 +13,19 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
+
+// Chakra Ui Icon Imports
 import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+
+// Portfolio Logo Imports
 import LogoLight from "../assets/website_logo_light.svg";
 import LogoDark from "../assets/website_logo_dark.svg";
-import { motion } from "framer-motion";
+
+// Component Imports
 import NavButtons from "./NavButtons";
+
+// Framer Motion and Section Varint Imports
+import { motion } from "framer-motion";
 import { opacityVariants } from "./Home";
 
 const Links = [
